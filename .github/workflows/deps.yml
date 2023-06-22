@@ -6,8 +6,11 @@ on:
       - main
 
 jobs:
-  security_check:
+  dependencies_submit:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: Maven Dependency Submission
         uses: advanced-security/maven-dependency-submission-action@v3.0.2
