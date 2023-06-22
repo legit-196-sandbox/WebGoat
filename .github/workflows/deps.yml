@@ -11,6 +11,3 @@ jobs:
     steps:
       - name: Maven Dependency Submission
         uses: advanced-security/maven-dependency-submission-action@v3.0.2
-        with:
-          token: ${{ secrets.PAT }}
-
